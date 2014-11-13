@@ -1,0 +1,74 @@
+! --- ~/.Xresources ------------------------------------------------------------
+! ------------------------------------------------------------------------------
+! --- generated with 4bit Terminal Color Scheme Designer -----------------------
+! ------------------------------------------------------------------------------
+! --- http://ciembor.github.com/4bit -------------------------------------------
+! ------------------------------------------------------------------------------
+
+! Credits to: 1bubneb/dotfiles
+
+! --- special colors ---
+
+*background: #000000
+*foreground: #ffffff
+
+! --- standard colors ---
+
+! black
+*color0: #2d2d2d
+
+! bright_black
+*color8: #565656
+
+! red
+*color1: #d35f84
+
+! bright_red
+*color9: #e9afc1
+
+! green
+*color2: #84d35f
+
+! bright_green
+*color10: #c1e9af
+
+! yellow
+*color3: #d3ae5f
+
+! bright_yellow
+*color11: #e9d7af
+
+! blue
+*color4: #5f84d3
+
+! bright_blue
+*color12: #afc1e9
+
+! magenta
+*color5: #ae5fd3
+
+! bright_magenta
+*color13: #d7afe9
+
+! cyan
+*color6: #5fd3ae
+
+! bright_cyan
+*color14: #afe9d7
+
+! white
+*color7: #ffffff
+
+! bright_white
+*color15: #ffffff
+
+
+! ------------------------------------------------------------------------------
+! --- end of terminal colors section -------------------------------------------
+! ------------------------------------------------------------------------------
+
+URxvt.scrollBar: false
+
+URxvt*.transparent: true
+! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens | default is 110
+URxvt*.shading: 25

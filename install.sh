@@ -11,7 +11,7 @@ for f in $HOME_FILES; do
         mv ~/$f ~/.dotbackup/
     fi
     # ln -s $f ~/$f
-    cp $f ~/$f
+    cp -r $f ~/$f
 done
 
 echo "Done!" 

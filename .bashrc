@@ -5,13 +5,16 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+xset -b
+xrandr --output LVDS1 --mode 1920x1080 --primary
+xrandr --output HDMI1 --mode 1360x768 --left-of LVDS1 --auto
+xrandr --output VGA1  --mode 1920x1080 --right-of LVDS1 --auto
+
+
 alias ls='ls --color=auto'
 alias please='sudo $(history -p !!)'
 
 alias sourcex='xrdb -merge ~/.Xresources'
-alias attach_hdmi='bash ~/xrandr.sh HDMI1 1360x768'
-alias attach_vga='bash ~/xrandr.sh VGA1 1920x1080'
-
 function mkcd {
     mkdir $1
     cd $1

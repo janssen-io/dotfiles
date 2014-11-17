@@ -152,5 +152,7 @@ bar {
         status_command i3status
 }
 
+exec bash ~/xrandr.sh
+exec xset -b
 exec xrdb ~/.Xresources
 exec --no-startup-id feh --bg-scale /usr/share/wallpapers/autumn/cat.jpg

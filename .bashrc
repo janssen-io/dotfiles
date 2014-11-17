@@ -9,8 +9,8 @@ alias ls='ls --color=auto'
 alias please='sudo $(history -p !!)'
 
 alias sourcex='xrdb -merge ~/.Xresources'
-alias attach_hdmi='bash ~/xrandr.cfg HDMI1 1360x768'
-alias attach_vga='bash ~/xrandr.cfg VGA1 1920x1080'
+alias attach_hdmi='bash ~/xrandr.sh HDMI1 1360x768'
+alias attach_vga='bash ~/xrandr.sh VGA1 1920x1080'
 
 function mkcd {
     mkdir $1

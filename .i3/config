@@ -24,7 +24,7 @@ font pango:DejaVu Sans Mono 8
 # font, it doesn’t scale on retina/hidpi displays.
 
 bindsym $mod+F4 exec --no-startup-id xbacklight -dec 10
-bindsym $mod+F5 exec --no-startup-id backlight -inc 10
+bindsym $mod+F5 exec --no-startup-id xbacklight -inc 10
 
 bindsym $mod+F11 exec --no-startup-id amixer sset Master 10%-
 bindsym $mod+F12 exec --no-startup-id amixer sset Master 10%+

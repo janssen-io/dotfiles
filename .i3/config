@@ -23,9 +23,11 @@ font pango:DejaVu Sans Mono 8
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+bindsym $mod+F4 exec --no-startup-id xbacklight -dec 10
+bindsym $mod+F5 exec --no-startup-id backlight -inc 10
 
+bindsym $mod+F11 exec --no-startup-id amixer sset Master 10%-
+bindsym $mod+F12 exec --no-startup-id amixer sset Master 10%+
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
@@ -152,7 +154,9 @@ bar {
         status_command i3status
 }
 
-exec bash ~/xrandr.sh
-exec xset -b
-exec xrdb ~/.Xresources
-exec --no-startup-id feh --bg-scale /usr/share/wallpapers/autumn/cat.jpg
+for_window [class="KeePass"] floating enable
+
+exec --no-startup-id bash ~/xrandr.sh
+exec --no-startup-id xset -b
+exec --no-startup-id xrdb ~/.Xresources
+exec --no-startup-id nitrogen --restore

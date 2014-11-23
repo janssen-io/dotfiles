@@ -86,6 +86,7 @@
 ! ------------------------------------------------------------------------------
 
 URxvt.scrollBar: false
+URxvt.lineSpace: 5
 
 URxvt*.transparent: true
 ! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens | default is 110

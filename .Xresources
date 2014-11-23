@@ -13,74 +13,31 @@
 *foreground: #ffffff
 
 ! --- standard colors ---
-/*
-! black
-*color0: #2d2d2d
 
-! bright_black
-*color8: #565656
-
-! red
-*color1: #d35f84
-
-! bright_red
-*color9: #e9afc1
-
-! green
-*color2: #84d35f
-
-! bright_green
-*color10: #c1e9af
-
-! yellow
-*color3: #d3ae5f
-
-! bright_yellow
-*color11: #e9d7af
-
-! blue
-*color4: #5f84d3
-
-! bright_blue
-*color12: #afc1e9
-
-! magenta
-*color5: #ae5fd3
-
-! bright_magenta
-*color13: #d7afe9
-
-! cyan
-*color6: #5fd3ae
-
-! bright_cyan
-*color14: #afe9d7
-
-! white
-*color7: #ffffff
-
-! bright_white
-*color15: #ffffff
-*/
-
-*color0: #3f3f4c
-*color1: #314673
-*color2: #5B5674
-*color3: #263B6A
-*color4: #D27B4E
-*color5: #E29F68
-*color6: #D67646
-*color7: #cccaca
-!Light Colors
-*color8: #525263
-*color9: #485673
-*color10: #827ba6
-*color11: #3b4a6a
-*color12: #d29678
-*color13: #e2b895
-*color14: #d69371
-*color15: #edeff2
-
+! black, red, green, yellow, blue, cyan, white
+urxvt*color0:         #353535
+urxvt*color8:         #666666
+!red
+urxvt*color1:         #AE4747
+urxvt*color9:         #EE6363
+!green
+urxvt*color2:         #86AF80
+urxvt*color10:        #87BC87
+!brown/yellow
+urxvt*color3:         #DAA520
+urxvt*color11:        #FFC125
+!blue
+urxvt*color4:         #6F99B4
+urxvt*color12:        #7C96B0
+!magenta
+urxvt*color5:         #8B7B8B
+urxvt*color13:        #D8BFD8
+!cyan
+urxvt*color6:         #A7A15E
+urxvt*color14:        #F0E68C
+!white
+urxvt*color7:         #DDDDD
+urxvt*color15:        #FFFFFF
 ! ------------------------------------------------------------------------------
 ! --- end of terminal colors section -------------------------------------------
 ! ------------------------------------------------------------------------------
@@ -90,6 +47,4 @@ URxvt.lineSpace: 5
 
 URxvt*.transparent: true
 ! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens | default is 110
-URxvt*.shading: 15
-
-client.focused #000000 #D27B4E #FFFFFF #2e9ef4
+URxvt*.shading: 20

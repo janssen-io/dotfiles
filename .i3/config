@@ -191,7 +191,7 @@ bar {
             statusline          $fg
             separator           $hi
             focused_workspace   $be         $bg          $ac
-            active_workspace    $be         $ac          $tx
+            active_workspace    $be         $bg          $tx
             inactive_workspace  $bg         $bg          $ia
             urgent_workspace    $rd         $bg          $ac
         }

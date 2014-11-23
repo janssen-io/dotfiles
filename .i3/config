@@ -195,6 +195,9 @@ bar {
             inactive_workspace  $bg         $bg          $ia
             urgent_workspace    $rd         $bg          $ac
         }
+
+        position top
+        status_command i3status -c ~/.i3/i3status.conf
 }
 
 for_window [class="KeePass"] floating enable

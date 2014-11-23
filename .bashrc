@@ -7,7 +7,7 @@
 
 alias ls='ls --color=auto'
 alias please='sudo $(history -p !!)'
-
+alias logout='i3-msg exit'
 alias sourcex='xrdb -merge ~/.Xresources'
 function mkcd {
     mkdir $1

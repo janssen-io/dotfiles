@@ -21,13 +21,15 @@ urxvt*color8:         #666666
 urxvt*color1:         #AE4747
 urxvt*color9:         #EE6363
 !green
-urxvt*color2:         #86AF80
+urxvt*color2:         #769F70
 urxvt*color10:        #87BC87
 !brown/yellow
 urxvt*color3:         #DAA520
 urxvt*color11:        #FFC125
 !blue
-urxvt*color4:         #6F99B4
+! urxvt*color4:         #6F99B4
+! urxvt*color12:        #7C96B0
+urxvt*color4:         #AFD9F4
 urxvt*color12:        #7C96B0
 !magenta
 urxvt*color5:         #8B7B8B
@@ -48,3 +50,5 @@ URxvt.lineSpace: 5
 URxvt*.transparent: true
 ! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens | default is 110
 URxvt*.shading: 20
+
+URxvt.visualBell: true

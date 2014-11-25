@@ -28,6 +28,7 @@ bindsym $mod+F5 exec --no-startup-id xbacklight -inc 10
 
 bindsym $mod+F11 exec --no-startup-id amixer sset Master 10%-
 bindsym $mod+F12 exec --no-startup-id amixer sset Master 10%+
+bindsym $mod+m   exec --no-startup-id amixer sset Master 0
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 

@@ -5,7 +5,7 @@ own_window no
 out_to_console yes
 double_buffer no
 background no
-update_interval 2.0
+update_interval 10.0
 
 total_run_times 0
 short_units yes
@@ -32,29 +32,21 @@ cpu_avg_samples 1
 # Battery: ${battery_percent BAT0}%
 
 ## Stuff after 'TEXT' will be formatted on screen
-#/home ${fs_free /home} | \
-#${if_up enp7s0}LAN ${addr enp7s0} | ${endif}\
-#${if_up wlp8s0}WiFi ${addr wlp8s0} | ${endif}\
-#CPU ${cpu cpu1}% | \
-#RAM ${memperc}% | \
-#BATT ${battery BAT0} | \
-#${time %Y-%m-%d}  ${time %H:%M} | \
-# V ${exec amixer -c 0 get Master | grep -oP "[0-9]{1,3}%"}
 
 TEXT
 # JSON for i3bar
 [
-{"full_text": "${fs_free /}, ${fs_free /home}",                  "color": "\#ffffff"},
-# $(if_up enp7s0}
-# {"full_text": "LAN: ${addr enp7s0}",                           "color":"\#ffffff"},
-# ${endif}
-# $(if_up wlp8s0}
-# {"full_text": "LAN: ${addr wlp8s0}",                           "color":"\#ffffff"},
-# ${endif}
-{"full_text": "HDD: ${diskio_read} | ${diskio_write}",           "color":"\#ffffff"},
-{"full_text": "RAM: ${memperc}%",                                "color":"\#ffffff"},
-{"full_text": "CPU: ${cpu cpu1}%",                               "color":"\#ffffff"},
-{"full_text": "BAT: ${battery_percent BAT1}%",                   "color":"\#ffffff"},
-{"full_text": "VOL: ${exec amixer -c 0 get Master | grep -oP "[0-9]{1,3}%"}", "color":"\#ffffff"},
-{"full_text": "${time %Y-%m-%d}  ${time %H:%M}",                 "color":"\#ffffff"}
+{"full_text": "${fs_free /},${fs_free /home}",                  "color":"\#ACACAC"},
+${if_up enp7s0} 
+    {"full_text": "L:${addr enp7s0}",                           "color":"\#ACACAC"},
+${endif}
+${if_up wlp8s0} 
+    {"full_text": "W:${addr wlp8s0}",                           "color":"\#ACACAC"},
+${endif}
+{"full_text": "R:${diskio_read} W:${diskio_write}",             "color":"\#ACACAC"},
+{"full_text": "RAM: ${memperc}%",                               "color":"\#ACACAC"},
+{"full_text": "CPU: ${cpu cpu1}%",                              "color":"\#ACACAC"},
+{"full_text": "BAT: ${battery_percent BAT1}%",                  "color":"\#ACACAC"},
+{"full_text": "VOL: ${exec amixer -c 0 get Master | grep -oP "[0-9]{1,3}%"}", "color":"\#ACACAC"},
+{"full_text": "${time %Y-%m-%d}  ${time %H:%M}",                "color":"\#EFEFEF"}
 ],

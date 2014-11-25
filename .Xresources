@@ -38,7 +38,7 @@ urxvt*color13:        #D8BFD8
 urxvt*color6:         #A7A15E
 urxvt*color14:        #F0E68C
 !white
-urxvt*color7:         #DDDDD
+urxvt*color7:         #DDDDDD
 urxvt*color15:        #FFFFFF
 ! ------------------------------------------------------------------------------
 ! --- end of terminal colors section -------------------------------------------

@@ -188,7 +188,7 @@ bar {
         colors {
             background          $bg
             statusline          $fg
-            separator           $rd
+            separator           $ac
             focused_workspace   $ac         $ac          $tx
             active_workspace    $ac         $bg          $tx
             inactive_workspace  $bg         $bg          $ia

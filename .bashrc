@@ -5,6 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+export EDITOR='/usr/bin/vim'
 alias ls='ls --color=auto'
 alias please='sudo $(history -p !!)'
 alias logout='i3-msg exit'

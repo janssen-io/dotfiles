@@ -26,9 +26,11 @@ font pango:DejaVu Sans Mono 8
 bindsym $mod+F4 exec --no-startup-id xbacklight -dec 10
 bindsym $mod+F5 exec --no-startup-id xbacklight -inc 10
 
-bindsym $mod+F11 exec --no-startup-id amixer sset Master 10%-
-bindsym $mod+F12 exec --no-startup-id amixer sset Master 10%+
+bindsym $mod+F11 exec --no-startup-id amixer sset Master 5%-
+bindsym $mod+F12 exec --no-startup-id amixer sset Master 5%+
 bindsym $mod+m   exec --no-startup-id amixer sset Master 0
+
+bindsym $mod+F3 exec ((synclient -l | egrep "TouchpadOff.*= *0") && synclient TouchpadOff=1) || synclient TouchpadOff=0
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 

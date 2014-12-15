@@ -23,6 +23,7 @@ font pango:DejaVu Sans Mono 8
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
+bindsym $mod+Escape exec i3lock -i /usr/share/wallpapers/lich.png
 
 bindsym XF86MonBrightnessDown  exec --no-startup-id xbacklight -dec 10
 bindsym XF86MonBrightnessUp    exec --no-startup-id xbacklight -inc 10
@@ -102,28 +103,40 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
+bindsym $mod+Next workspace next
+bindsym $mod+Prior workspace prev
+
+bindsym $mod+grave workspace 0|terminal
+bindsym $mod+1 workspace 1|main
+bindsym $mod+2 workspace 2|www
+bindsym $mod+3 workspace 3|files
+bindsym $mod+4 workspace 4|chat
+bindsym $mod+5 workspace 5|media
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+bindsym $mod+minus workspace 11
+bindsym $mod+plus workspace 12
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+Next move container to workspace next
+bindsym $mod+Shift+Prior move container to workspace prev
+
+bindsym $mod+Shift+grave move container to workspace "0|terminal"
+bindsym $mod+Shift+1 move container to workspace "1|main"
+bindsym $mod+Shift+2 move container to workspace "2|www"
+bindsym $mod+Shift+3 move container to workspace "3|files"
+bindsym $mod+Shift+4 move container to workspace "4|chat"
+bindsym $mod+Shift+5 move container to workspace "5|media"
+bindsym $mod+Shift+6 move container to workspace "6"
+bindsym $mod+Shift+7 move container to workspace "7"
+bindsym $mod+Shift+8 move container to workspace "8"
+bindsym $mod+Shift+9 move container to workspace "9"
+bindsym $mod+Shift+0 move container to workspace "10"
+bindsym $mod+Shift+minus move container to workspace "11"
+bindsym $mod+Shift+plus move container to workspace  "12"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -210,6 +223,13 @@ bar {
 }
 
 for_window [class="KeePass"] floating enable
+
+assign [class="Firefox"] 2|www
+assign [class="Skype"] 4|chat
+
+for_window [class="Firefox"] focus
+for_window [class="Skype"] focus
+for_window [class="MonoDevelop" title="Errors"] floating disable
 
 exec --no-startup-id bash ~/xrandr.sh
 exec --no-startup-id xset -b

@@ -9,12 +9,22 @@ export EDITOR='/usr/bin/vim'
 alias ls='ls --color=auto'
 alias please='sudo $(history -p !!)'
 alias logout='i3-msg exit'
-alias sourcex='xrdb -merge ~/.Xresources'
+alias sourcex='xrdb ~/.Xresources'
+alias ipup='sudo ip link set wlp8s0 up'
+
 function mkcd {
     mkdir $1
     cd $1
 }
 
+# open a screen for rtorrent
+function rtd {
+    if screen -ls | grep --quiet rtorrent; then
+        screen -x rtorrent
+    else
+        screen -S rtorrent rtorrent
+    fi
+}
 # PS1='[\u@\h \W]\$ ' # DEFAULT PS1
 function color_my_prompt {
 	# credit to: http://stackoverflow.com/a/6086978

@@ -46,7 +46,7 @@ ${endif}
 {"full_text": "R:${diskio_read} W:${diskio_write}",             "color":"\#ACACAC"},
 {"full_text": "RAM: ${memperc}%",                               "color":"\#ACACAC"},
 {"full_text": "CPU: ${cpu cpu1}%",                              "color":"\#ACACAC"},
-{"full_text": "BAT: ${battery_percent BAT1}%",                  "color":"\#ACACAC"},
 {"full_text": "VOL: ${exec amixer -c 0 get Master | grep -oP "[0-9]{1,3}%"}", "color":"\#ACACAC"},
+{"full_text": "${battery_percent BAT1}%",                       "color": "\#EFEFEF"},
 {"full_text": "${time %Y-%m-%d}  ${time %H:%M}",                "color":"\#EFEFEF"}
 ],

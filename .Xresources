@@ -50,3 +50,4 @@ URxvt*.transparent: true
 URxvt*.shading: 20
 
 URxvt.visualBell: true
+URxvt*termName: rxvt

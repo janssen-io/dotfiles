@@ -41,7 +41,9 @@ bindsym $mod+F5       exec --no-startup-id mpc play
 bindsym $mod+Shift+F5 exec --no-startup-id mpc pause
 bindsym $mod+F6       exec --no-startup-id mpc stop
 bindsym $mod+F7       exec --no-startup-id mpc prev
+bindsym $mod+Shift+F7 exec --no-startup-id mpc seek -10
 bindsym $mod+F8       exec --no-startup-id mpc next
+bindsym $mod+Shift+F8 exec --no-startup-id mpc seek +10
 
 bindsym XF86TouchpadToggle exec ((synclient -l | egrep "TouchpadOff.*= *0") && synclient TouchpadOff=1) || synclient TouchpadOff=0
 bindsym $mod+F3            exec ((synclient -l | egrep "TouchpadOff.*= *0") && synclient TouchpadOff=1) || synclient TouchpadOff=0

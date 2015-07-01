@@ -27,8 +27,8 @@ bindsym $mod+Escape exec i3lock -i /usr/share/wallpapers/lich.png
 
 bindsym XF86MonBrightnessDown  exec --no-startup-id xbacklight -dec 10
 bindsym XF86MonBrightnessUp    exec --no-startup-id xbacklight -inc 10
-bindsym $mod+F4                exec --no-startup-id xbacklight -dec 10
-bindsym $mod+F5                exec --no-startup-id xbacklight -inc 10
+bindsym $mod+F4                exec --no-startup-id xbacklight -inc 10
+bindsym $mod+Shift+F4          exec --no-startup-id xbacklight -dec 10
 
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset Master 5%-
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer sset Master 5%+
@@ -36,6 +36,12 @@ bindsym XF86AudioMute        exec --no-startup-id amixer sset Master 0
 bindsym $mod+F11             exec --no-startup-id amixer sset Master 5%-
 bindsym $mod+F12             exec --no-startup-id amixer sset Master 5%+
 bindsym $mod+m               exec --no-startup-id amixer sset Master 0
+
+bindsym $mod+F5       exec --no-startup-id mpc play
+bindsym $mod+Shift+F5 exec --no-startup-id mpc pause
+bindsym $mod+F6       exec --no-startup-id mpc stop
+bindsym $mod+F7       exec --no-startup-id mpc prev
+bindsym $mod+F8       exec --no-startup-id mpc next
 
 bindsym XF86TouchpadToggle exec ((synclient -l | egrep "TouchpadOff.*= *0") && synclient TouchpadOff=1) || synclient TouchpadOff=0
 bindsym $mod+F3            exec ((synclient -l | egrep "TouchpadOff.*= *0") && synclient TouchpadOff=1) || synclient TouchpadOff=0
@@ -102,9 +108,9 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# switch to workspace
-bindsym $mod+Next workspace next
-bindsym $mod+Prior workspace prev
+# move workspace
+bindsym $mod+Next move workspace to left
+bindsym $mod+Prior move workspace to right
 
 bindsym $mod+grave workspace 0|terminal
 bindsym $mod+1 workspace 1|main
@@ -185,10 +191,11 @@ bindsym $mod+r mode "resize"
 # set $rd     #F18260
 
 # colours vibrant
-set $bg     #393939
+set $bg     #282C35
 set $fg     #E8E9CA
 set $hi     #D75F00
 set $ac     #D75F00
+set $acw    #585C75
 set $tx     #E8E9CA
 set $ia     #6C6C6C
 
@@ -198,7 +205,7 @@ set $gn     #0EF318
 set $rd     #872F00
 
 #                               border      background  text        indicator
-client.focused                  $ac         $ac         $tx         $rd
+client.focused                  $acw         $acw         $tx         $acw
 client.unfocused                $bg         $bg         $ia
 client.focused_inactive         $bg         $bg         $ac
 client.urgent                   $rd         $rd         $tx
@@ -219,18 +226,16 @@ bar {
         position top
         #status_command i3status -c ~/.i3/i3status.conf
         #status_command conky -c ~/.conkyrc
-        status_command .i3/conky-i3bar
+        status_command i3blocks
 }
-
-for_window [class="KeePass"] floating enable
 
 assign [class="Firefox"] 2|www
 assign [class="Skype"] 4|chat
+assign [class="VirtualBox"] 10
 
 for_window [class="Firefox"] focus
 for_window [class="Skype"] focus
 for_window [class="MonoDevelop" title="Errors"] floating disable
-
 exec --no-startup-id bash ~/xrandr.sh
 exec --no-startup-id xset -b
 exec --no-startup-id xrdb ~/.Xresources

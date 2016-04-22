@@ -1,7 +1,18 @@
 {
-	"color_scheme": "Packages/Predawn/predawn.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/brogrammer (SL).tmTheme",
 	"copy_with_empty_selection": false,
 	"drag_text": false,
+	"folder_exclude_patterns":
+	[
+		".git",
+		"build",
+		"dist",
+		"*.egg-info",
+		"include",
+		"lib",
+		"__pycache__"
+	],
+	"font_size": 12,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -10,6 +21,7 @@
 	"line_padding_bottom": 3,
 	"line_padding_top": 3,
 	"preview_on_click": false,
-	"theme": "predawn-DEV.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"theme": "Brogrammer.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"update_check": false
 }

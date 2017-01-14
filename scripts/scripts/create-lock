@@ -1,0 +1,6 @@
+#!/bin/sh
+
+IMG=~/Pictures/lock.png
+scrot $IMG
+convert -blur 20x5 $IMG $IMG
+i3lock -i $IMG

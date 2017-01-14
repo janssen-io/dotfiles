@@ -42,9 +42,13 @@ color14: #5F9898
 ! --- end of terminal colors section -------------------------------------------
 ! ------------------------------------------------------------------------------
 
+URxvt.font: xft:hack:size=11
+URxvt.letterSpace: -2
 URxvt.scrollBar: false
 URxvt.lineSpace: 5
 
+URxvt*scrollTtyOutput: false
+URxvt*scrollTtyKeypress: true
 URxvt*.transparent: true
 ! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens | default is 110
 URxvt*.shading: 20

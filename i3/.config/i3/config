@@ -189,7 +189,7 @@ set $yw     #EEE685
 set $gn     #0EF318
 set $rd     #872F00
 
-bindsym $mod+d exec dmenu_run -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg"
+bindsym $mod+d exec dmenu_run -nb "$bg" -nf "$fg" -sb "$fg" -sf "$hi"
 
 #                               border      background  text        indicator
 client.focused                  $acw         $acw         $tx         $acw

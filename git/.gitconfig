@@ -1,3 +1,5 @@
 [user]
 	email = stanjanssen@outlook.com
 	name = Stan Janssen
+[push]
+	default = simple

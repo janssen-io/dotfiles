@@ -6,6 +6,8 @@ PKGS=`ls -d */`
 .PHONY: install
 install:
 	stow -t ~ $(PKGS)
+	xrdb ~/.Xresources
+
 
 .PHONY: uninstall
 uninstall:

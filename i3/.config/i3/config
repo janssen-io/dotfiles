@@ -111,12 +111,11 @@ bindsym $mod+a focus parent
 bindsym $mod+Next move workspace to left
 bindsym $mod+Prior move workspace to right
 
-bindsym $mod+Grave workspace 0|terminal
-bindsym $mod+1 workspace 1|main
-bindsym $mod+2 workspace 2|www
-bindsym $mod+3 workspace 3|files
-bindsym $mod+4 workspace 4|chat
-bindsym $mod+5 workspace 5|media
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
@@ -129,12 +128,11 @@ bindsym $mod+plus workspace 12
 bindsym $mod+Shift+Next move container to workspace next
 bindsym $mod+Shift+Prior move container to workspace prev
 
-bindsym $mod+Shift+grave move container to workspace "0|terminal"
-bindsym $mod+Shift+1 move container to workspace "1|main"
-bindsym $mod+Shift+2 move container to workspace "2|www"
-bindsym $mod+Shift+3 move container to workspace "3|files"
-bindsym $mod+Shift+4 move container to workspace "4|chat"
-bindsym $mod+Shift+5 move container to workspace "5|media"
+bindsym $mod+Shift+1 move container to workspace "1"
+bindsym $mod+Shift+2 move container to workspace "2"
+bindsym $mod+Shift+3 move container to workspace "3"
+bindsym $mod+Shift+4 move container to workspace "4"
+bindsym $mod+Shift+5 move container to workspace "5"
 bindsym $mod+Shift+6 move container to workspace "6"
 bindsym $mod+Shift+7 move container to workspace "7"
 bindsym $mod+Shift+8 move container to workspace "8"
@@ -214,10 +212,11 @@ bar {
         status_command i3blocks
 }
 
-assign [class="Firefox"] 2|www
-assign [class="Nautilus"] 3|files
-assign [class="Skype"] 4|chat
-assign [class="Teamspeak 3"] 4|chat
+assign [class="Firefox"] 2
+assign [class="Nautilus"] 3
+assign [class="Skype"] 4
+assign [class="Pidgin"] 4
+
 
 for_window [class="Firefox"] focus
 for_window [class="Skype"] focus

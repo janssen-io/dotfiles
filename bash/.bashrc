@@ -10,6 +10,7 @@ wal -r
 export EDITOR='/usr/bin/vim'
 alias ls='ls --color=auto'
 alias please='sudo $(history -p !!)'
+alias lock='create-lock'
 alias logout='i3-msg exit'
 alias walnow='wal -i "$HOME/Dropbox/wallpapers"'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'

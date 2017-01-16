@@ -228,5 +228,5 @@ exec --no-startup-id xset -b
 # exec --no-startup-id nitrogen --restore
 exec "wal -i ~/Pictures/Wallpapers"
 
-bindsym $mod+Escape exec "~/scripts/create-lock"
-exec xautolock -locker "~/scripts/create-lock"
+bindsym $mod+Escape exec "~/bin/create-lock"
+exec xautolock -locker "~/bin/create-lock"

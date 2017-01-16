@@ -159,7 +159,7 @@ set_wallpaper() {
                 feh --bg-fill "$wal"
 
             elif type -p nitrogen >/dev/null; then
-                nitrogen --set-zoom-fill "$wal"
+                nitrogen --set-tiled "$wal"
 
             elif type -p bgs >/dev/null; then
                 bgs "$wal"

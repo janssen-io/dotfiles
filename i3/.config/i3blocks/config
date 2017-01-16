@@ -25,8 +25,8 @@
 # Global properties
 #
 # The top properties below are applied to every block, but can be overridden.
-# Each block command defaults to the script name to avoid boilerplate.
-command=$SCRIPT_DIR/$BLOCK_NAME
+# Each block command defaults to the script name to avoid boilerplate
+command=/home/stan/.config/i3blocks/scripts/$BLOCK_NAME
 separator_block_width=15
 markup=none
 

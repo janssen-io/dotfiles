@@ -81,7 +81,6 @@ interval=60
 #instance=wlan0
 color=#00FF00
 interval=10
-separator=false
 
 [wifi]
 #instance=wlp3s0
@@ -99,7 +98,6 @@ interval=10
 label=CPU
 interval=10
 min_width=CPU: 100.00%
-#separator=false
 
 #[load_average]
 #interval=10

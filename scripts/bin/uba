@@ -1,0 +1,24 @@
+#!/usr/bin/python3
+import sys
+from urllib.parse import urlparse
+import webbrowser
+
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print(help())
+    template = '{scheme}://{netloc}.proxy.uba.uva.nl:2048{path}?{query}'
+    try:
+        url_parts = urlparse(sys.argv[1])
+    except ValueError:
+        print(help())
+    else:
+        webbrowser.open(template.format(
+            scheme=url_parts.scheme,
+            netloc=url_parts.netloc,
+            path=url_parts.path,
+            query=url_parts.query
+        ))
+
+
+    
+    

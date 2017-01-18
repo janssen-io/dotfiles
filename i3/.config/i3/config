@@ -215,17 +215,6 @@ bar {
         status_command i3blocks
 }
 
-assign [class="Firefox"] 2
-assign [class="Nautilus"] 3
-assign [class="Skype"] 4
-assign [class="Pidgin"] 4
-
-
-for_window [class="Firefox"] focus
-for_window [class="Skype"] focus
-for_window [class="Nautilus"] focus
-for_window [class="Teamspeak 3"] focus
-
 exec --no-startup-id xset -b
 # exec --no-startup-id xrdb ~/.Xresources
 # exec --no-startup-id nitrogen --restore

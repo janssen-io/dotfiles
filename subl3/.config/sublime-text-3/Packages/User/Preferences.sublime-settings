@@ -1,5 +1,6 @@
 {
-	"color_scheme": "Packages/User/SublimeLinter/brogrammer (SL).tmTheme",
+	"auto_find_in_selection": true,
+	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"copy_with_empty_selection": false,
 	"drag_text": false,
 	"folder_exclude_patterns":
@@ -12,16 +13,18 @@
 		"lib",
 		"__pycache__"
 	],
+	"font_face": "hack",
 	"font_size": 12,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"line_padding_bottom": 3,
-	"line_padding_top": 3,
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
 	"preview_on_click": false,
-	"theme": "Brogrammer.sublime-theme",
+	"shift_tab_unindent": true,
+	"theme": "ayu-dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"update_check": false
+	"update_check": true
 }

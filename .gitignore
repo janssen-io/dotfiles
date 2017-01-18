@@ -2,3 +2,15 @@
 *.db
 *.pid
 .mpd/mpdstate
+
+subl3/.config/sublime-text-3/Cache/
+subl3/.config/sublime-text-3/Index/
+subl3/.config/sublime-text-3/Installed Packages/
+subl3/.config/sublime-text-3/Local/
+subl3/.config/sublime-text-3/Packages/User/Package Control.cache/
+subl3/.config/sublime-text-3/Packages/User/Package Control.last-run
+subl3/.config/sublime-text-3/Packages/User/Package Control.merged-ca-bundle
+subl3/.config/sublime-text-3/Packages/User/Package Control.sublime-settings
+subl3/.config/sublime-text-3/Packages/User/Package Control.user-ca-bundle
+subl3/.config/sublime-text-3/Packages/pygments/
+subl3/.config/sublime-text-3/Packages/pyyaml/

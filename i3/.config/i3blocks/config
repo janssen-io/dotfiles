@@ -37,7 +37,7 @@ markup=none
 # See the script for details.
 [volume]
 # label=VOL
-label=♪
+label=
 instance=Master
 #instance=PCM
 interval=5
@@ -47,7 +47,7 @@ signal=10
 #
 # The type defaults to "mem" if the instance is not specified.
 [memory]
-label=MEM
+label=
 separator=false
 interval=30
 
@@ -63,13 +63,13 @@ interval=30
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
 [disk]
-label=home
+label=
 instance=/home
 interval=60
 separator=false
 
 [disk]
-label=root
+label=
 instance=/
 interval=60
 
@@ -78,12 +78,14 @@ interval=60
 # If the instance is not specified, use the interface used for default route.
 # The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
 [iface]
+label=
 #instance=wlan0
 color=#00FF00
 interval=10
 
 [wifi]
 #instance=wlp3s0
+label=
 interval=10
 
 #[bandwidth]
@@ -95,7 +97,7 @@ interval=10
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
 [cpu_usage]
-label=CPU
+label=
 interval=10
 min_width=CPU: 100.00%
 
@@ -106,7 +108,7 @@ min_width=CPU: 100.00%
 #
 # The battery instance defaults to 0.
 [battery]
-label=BAT
+label=
 #label=⚡
 #instance=1
 interval=30

@@ -1,46 +1,4 @@
-! --- ~/.Xresources ------------------------------------------------------------
-! ------------------------------------------------------------------------------
-! --- generated with 4bit Terminal Color Scheme Designer -----------------------
-! ------------------------------------------------------------------------------
-! --- http://ciembor.github.com/4bit -------------------------------------------
-! ------------------------------------------------------------------------------
-
-! Credits to: 1bubneb/dotfiles
-
-! --- special colors ---
-
-URxvt*background: #191919
-URxvt*foreground: #efefef
-
-! --- standard colors ---
-
-!Black
-*color0: #36393a
-*color8: #627369
-!Red
-*color1: #924445
-*color9: #803536
-!Green
-*color2: #456140
-*color10: #33642A
-!Yellow
-*color3: #DAB257
-*color11: #AC8E46
-!Blue
-*color4: #657386
-*color12: #334E72
-!Magenta
-*color5: #977F94
-*color13: #7A6A78
-!Cyan
-*color6: #7DB9BA
-color14: #5F9898
-!White
-*color7: #d7d9cd
-*color15: #f6f6f5
-! ------------------------------------------------------------------------------
-! --- end of terminal colors section -------------------------------------------
-! ------------------------------------------------------------------------------
+! urxvt settings
 
 URxvt.font: xft:hack:size=11
 URxvt.letterSpace: -2
@@ -55,3 +13,10 @@ URxvt*.shading: 20
 
 URxvt.visualBell: true
 URxvt*termName: rxvt
+
+! rofi settings
+rofi.opacity: 80
+rofi.width: 50
+rofi.lines: 4
+rofi.columns: 1
+rofi.padding: 100

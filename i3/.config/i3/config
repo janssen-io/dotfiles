@@ -30,10 +30,10 @@ bindsym $mod+Shift+F4          exec --no-startup-id xbacklight -dec 10
 
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset Master 5%-
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer sset Master 5%+
-bindsym XF86AudioMute        exec --no-startup-id amixer sset Master 0
+bindsym XF86AudioMute        exec --no-startup-id amixer sset Master toggle
 bindsym $mod+F11             exec --no-startup-id amixer sset Master 5%-
 bindsym $mod+F12             exec --no-startup-id amixer sset Master 5%+
-bindsym $mod+m               exec --no-startup-id amixer sset Master 0
+bindsym $mod+m               exec --no-startup-id amixer sset Master toggle
 
 bindsym $mod+Shift+m move scratchpad
 bindsym $mod+Shift+s scratchpad show
@@ -219,7 +219,7 @@ bar {
 exec --no-startup-id xset -b
 # exec --no-startup-id xrdb ~/.Xresources
 # exec --no-startup-id nitrogen --restore
-exec "wal -i ~/Pictures/Wallpapers"
+exec "wal -i ~/Dropbox/wallpapers"
 
 bindsym $mod+Escape exec "~/bin/create-lock"
 exec xautolock -locker "~/bin/create-lock"

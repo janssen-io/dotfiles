@@ -1,5 +1,6 @@
 ! urxvt settings
 
+URxvt.loginShell: true
 URxvt.font: xft:hack:size=11
 URxvt.letterSpace: -2
 URxvt.scrollBar: false

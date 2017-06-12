@@ -13,12 +13,11 @@
 		"__pycache__"
 	],
 	"font_face": "hack",
-	"font_size": 12,
+	"font_size": 14,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,

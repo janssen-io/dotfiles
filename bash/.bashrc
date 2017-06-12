@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-wal -r
+# wal -r
 
 export EDITOR='/usr/bin/vim'
 alias ls='ls --color=auto'

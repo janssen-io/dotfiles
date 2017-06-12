@@ -1,17 +1,16 @@
 [global]
-    font = "Monospace 10"
+    font = "Hack 10"
     allow_markup = yes
     format = "<b>%s %p</b>\n%b"
-    sort = yes
+    sort = no
     indicate_hidden = true
-    # geometry = "x5"
     idle_threshold = 0
     geometry = "300x5-20+20"
-    alignment = center
+    alignment = right
     show_age_threshold = 60
     sticky_history = yes
     follow = mouse
-    word_wrap = yes
+    word_wrap = no
     separator_height = 2
     padding = 10
     horizontal_padding = 10
@@ -19,6 +18,7 @@
     startup_notification = true
     dmenu = "/usr/bin/dmenu -p dunst: -nb #FFFFFF -nf #000000 -sb #94DBFF -sf #000000"
     browser = /home/knopwob/bin/url_dispatcher
+    transparency = 10
 
 
 [frame]
@@ -31,17 +31,24 @@
     history = ctrl+grave
     context = ctrl+shift+period
 
-[urgency_low]
-    background = "#19191F"
-    foreground = "#56C886"
-    timeout = 1
-
-[urgency_normal]
-    background = "#19191F"
-    foreground = "#86A6C8"
+[base16_low]
+    msg_urgency = low
+    background = "#383830"
+    foreground = "#F8F8F2"
     timeout = 3
 
-[urgency_critical]
-    background = "#19191F"
-    foreground = "#C85656"
-    timeout = 3
+[base16_normal]
+    msg_urgency = normal
+    background = "#49483e"
+    foreground = "#f8f8f2"
+    timeout = 5
+
+[base16_critical]
+    msg_urgency = critical
+    background = "#f92672"
+    foreground = "#f5f4f1"
+    timeout = 5
+
+[rspec]
+    summary = "*RSpec Success*"
+    foreground = "#A6E22E"

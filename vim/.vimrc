@@ -1,3 +1,23 @@
+set expandtab
+set smarttab
+set shiftwidth=4
+set tabstop=4
+set autoindent
+set smartindent
+set wrap
+set ruler
+set incsearch
+set showmatch
+set magic
+set number
+set foldmethod=indent
+syntax enable
+
+highlight TrailingWhitespace ctermbg=red guibg=red
+match TrailingWhitespace /\s\+$/
+
+set pastetoggle=<F2>
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -33,17 +53,3 @@ filetype plugin indent on    " required
 set autoread
 command W w !sudo tee % > /dev/null
 
-set expandtab
-set smarttab
-set shiftwidth=4
-set tabstop=4
-set autoindent
-set smartindent
-set wrap
-set ruler
-set incsearch
-set showmatch
-set magic
-set number
-set foldmethod=indent
-syntax enable

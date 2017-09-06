@@ -73,7 +73,6 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-bindsym $mod+period move container to output right
 bindsym $mod+Shift+period move workspace to output right
 
 # split in horizontal orientation
@@ -103,8 +102,8 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # move workspace
-bindsym $mod+Next move workspace to left
-bindsym $mod+Prior move workspace to right
+bindsym $mod+Next workspace next
+bindsym $mod+Prior workspace prev
 
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
@@ -177,7 +176,7 @@ set $acw    #585C75
 set $tx     #E8E9CA
 set $ia     #6C6C6C
 
-set $be     #4A708B 
+set $be     #4A708B
 set $yw     #EEE685
 set $gn     #0EF318
 set $rd     #872F00
@@ -211,8 +210,8 @@ bar {
 exec --no-startup-id xset -b
 # exec --no-startup-id xrdb ~/.Xresources
 # exec --no-startup-id nitrogen --restore
-exec "wal -i ~/Dropbox/wallpapers"
+exec "wal -i ~/Pictures/wallpapers"
 
 bindsym $mod+Escape exec "~/bin/create-lock"
 exec xautolock -locker "~/bin/create-lock"
-exec compton -CG 
+exec compton -CG

@@ -21,3 +21,4 @@ rofi.width: 50
 rofi.lines: 4
 rofi.columns: 1
 rofi.padding: 100
+rofi.color-enabled: true

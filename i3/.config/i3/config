@@ -10,6 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $alt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -85,7 +86,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+# bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -97,13 +98,17 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+bindsym $mod+p focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+c focus child
 
-# move workspace
-bindsym $mod+Next workspace next
-bindsym $mod+Prior workspace prev
+# focus next/previous workspace
+bindsym $mod+Tab workspace next
+bindsym $alt+Tab workspace next
+
+bindsym $mod+Shift+Tab workspace prev
+bindsym $alt+Shift+Tab workspace prev
 
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
@@ -183,6 +188,7 @@ set $rd     #872F00
 
 #bindsym $mod+d exec dmenu_run -nb "$bg" -nf "$fg" -sb "$fg" -sf "$hi"
 bindsym $mod+d exec rofi -show run
+bindsym $mod+s exec rofi -show window
 
 #                               border      background  text        indicator
 client.focused                  $acw         $acw         $tx         $acw

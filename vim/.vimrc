@@ -11,6 +11,7 @@ set showmatch
 set magic
 set number
 set foldmethod=indent
+set wildmenu
 syntax enable
 
 highlight TrailingWhitespace ctermbg=red guibg=red

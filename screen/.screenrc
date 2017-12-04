@@ -1,0 +1,12 @@
+# Look and feel
+caption always "%{= bb}%{+b w}Screen: %n | %h %=%c %Y%m%d"
+hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+
+# Our warning of activity
+activity "Activity in %t(%n)"
+
+shell /bin/bash
+term xterm
+
+bind ^x
+bind x

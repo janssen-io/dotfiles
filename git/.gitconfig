@@ -3,3 +3,7 @@
 	name = Stan Janssen
 [push]
 	default = simple
+[alias]
+	co = checkout
+	st = status
+	br = branch
